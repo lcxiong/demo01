@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>logo.png">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- 瞬间移动组件独立组件 -->
+    <div id="modal"></div>
+    <!-- 生成的文件将被自动注入 -->
+    <!-- 高德地图api -->
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=b500805fc94f5a6c33684be251245258&plugin=AMap.Scale,AMap.OverView,AMap.ToolBar,AMap.MouseTool,AMap.PolyEditor"></script>
+  </body>
+</html>
