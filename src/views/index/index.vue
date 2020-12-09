@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted } from "vue";
+import { defineComponent, ref, onMounted,} from "vue";
 
 import { chart, gis_info } from "@/tool/testData";
 import echartZj from "../../components/echartZj.vue";

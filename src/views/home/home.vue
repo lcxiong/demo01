@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent,provide } from "vue";
 //导入自定义 组件
 import breadcrumbZj from "./breadcrumbZj.vue";
 import tabbarZj from "./tabbarZj.vue";
@@ -25,7 +25,10 @@ export default defineComponent({
     breadcrumbZj,
     tabbarZj,
   },
-  setup() {},
+  setup() {
+    //provide(名称,数据)
+    provide('globalColor','red')
+  },
 });
 </script>
 

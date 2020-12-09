@@ -16,8 +16,19 @@ import Eventdetails from '../views/eventinfo/eventdetails.vue'
 import Datamonitoring from '../views/datamonitoring/datamonitoring.vue'
 //历史记录
 import Historylist from '../views/historylist/historylist.vue'
+//demo
+import Demo from '../views/demo/demo.vue'
 
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/demo',
+    name: 'demo',
+    component: Demo,
+    meta:{
+      title:'DEMO'
+    }
+  },
+
   {
     path:'/',
     redirect:'/login'//***重定向

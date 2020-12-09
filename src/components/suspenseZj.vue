@@ -5,7 +5,7 @@
     <div>
       {{ list }}
     </div>
-    <div>{{$filters.numFilter(3.78546)}}</div>
+    <div>{{ $filters.numFilter(3.78546) }}</div>
   </div>
 </template>
 

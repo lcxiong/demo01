@@ -37,7 +37,7 @@ export default defineComponent({
   height: 2rem;
   line-height: 2rem;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #969696;
   background: white;
   position: fixed;
   left: 50%;
@@ -45,6 +45,6 @@ export default defineComponent({
   margin-left: -1rem;
   margin-top: -1rem;
   font-size: 0.3rem;
-  border-radius: 1px;
+  border-radius: 4px;
 }
 </style>

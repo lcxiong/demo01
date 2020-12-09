@@ -50,6 +50,7 @@ export default defineComponent({
         path.push([v.end_lon, v.end_lat]);
       });
       state.markers = markers; //*
+      // console.log(JSON.stringify(path))
       state.polyline = path; //*
     };
     // initMap

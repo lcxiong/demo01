@@ -28,3 +28,77 @@
     border-top: 8px solid#05ae09;
 }
   /**地图样式 end */
+
+  /* 弹窗样式 */
+  .ol-popup {
+    position: absolute;
+    background-color: white;
+    /* -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2)); */
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    bottom: 25px;
+    left: -50px;
+}
+
+.ol-popup:after,
+.ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popup-closer:after {
+    content: "✖";
+    color: #969696; 
+    font-size: 14px;
+}
+
+#popup-content {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    width: 200px;
+}
+
+#popup-content .markerInfo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#popup-content .markerText {
+    font-size: 12px;
+}
+/* 隐藏插件样式 */
+.ol-attribution.ol-uncollapsible {
+    display: none;
+}
+
+.ol-zoom {
+    display: none;
+}

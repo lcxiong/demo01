@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, nextTick } from "vue";
+import { defineComponent, nextTick,getCurrentInstance ,onMounted,onBeforeMount,} from "vue";
 
 import suspenseZj from "../../components/suspenseZj.vue";
 
@@ -22,8 +22,25 @@ export default defineComponent({
   components: {
     suspenseZj,
   },
-  setup(props, ctx) {
+  setup() {
+    
+    //前端总是在路上，发展真的太疯狂了，少年加油   学起来
+
+    const cur:any = getCurrentInstance();
+
+    onMounted(()=>{
+
+    })
+
+    onBeforeMount(()=>{
+      console.log(cur.ctx.$filters.numFilter(6.67895))
+    })
+    
     nextTick(() => {});
   },
 });
 </script>
+
+<style lang="scss" scoped>
+// css 
+</style>

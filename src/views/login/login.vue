@@ -25,12 +25,18 @@
           登录
         </van-button>
       </div>
+      <div style="margin: 0.4rem 1rem">
+        <van-button block  size="normal" @click="toDemo">
+          瓦片
+        </van-button>
+      </div>
     </van-form>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, reactive, toRefs } from "vue";
+// 前端总是在路上，发展真的太疯狂了，少年加油   学起来
+import { defineComponent, onMounted, reactive, toRefs,} from "vue";
 import { useRouter } from "vue-router";
 import { my } from "@/services/apis/my"; //导入请求接口的方法
 import storage from "@/tool/useLocalStorage";
@@ -72,6 +78,11 @@ export default defineComponent({
     let onSubmit = () => {
       postData();
     };
+    let toDemo = ()=>{
+      router.push({
+        name:'demo'
+      })
+    }
     //生命周期：钩子函数
     onMounted(() => {});
 
@@ -79,6 +90,7 @@ export default defineComponent({
     return {
       ...toRefs(state),
       onSubmit,
+      toDemo,
     };
   },
 });
