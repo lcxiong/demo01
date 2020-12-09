@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let instance = axios.create({
-    baseURL: 'https://waterfire.yuxianginfo.net',//https://idospower.yuxianginfo.net   https://waterfire.yuxianginfo.net
+    baseURL: '',
     timeout: 200000,
     withCredentials: false,
 });
